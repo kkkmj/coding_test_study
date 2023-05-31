@@ -8,13 +8,13 @@ import java.io.IOException;
 public class PaintCar {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer stk = new StringTokenizer(br.readLine(), " ");
+        StringTokenizer stk = new StringTokenizer(br.readLine());
 
         int n = Integer.parseInt(stk.nextToken());
         int m = Integer.parseInt(stk.nextToken());
         int[] cars = new int[n+1];
         cars[0] = 0;
-        stk = new StringTokenizer(br.readLine(), " ");
+        stk = new StringTokenizer(br.readLine());
         for(int i = 1; i<n+1; i++){
             cars[i] = Integer.parseInt(stk.nextToken());
         }
@@ -25,7 +25,7 @@ public class PaintCar {
         }
 
         for(int i=0; i<m; i++){
-            stk = new StringTokenizer(br.readLine(), " ");
+            stk = new StringTokenizer(br.readLine());
             int s = Integer.parseInt(stk.nextToken());
             int t = Integer.parseInt(stk.nextToken());
 
